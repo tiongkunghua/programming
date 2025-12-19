@@ -4,6 +4,6 @@ def sum_to_n(n):
         total += i
     return total
 
-# 呼叫函式，計算 1 到 100 的總和
 result_1_100 = sum_to_n(100)
 print("1 到 100 的總和 =", result_1_100)
+
