@@ -1,10 +1,9 @@
-# def sum_to_n(n):
-#     total = 0
-#     for i in range(1, n + 1):
-#         total += i
-#     return total
+def sum_to_n(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
 
-from file1 import sum_to_n
-result = sum_to_n(100)
-print("1 到 100 的總和 =", result)
-
+# 呼叫函式，計算 1 到 100 的總和
+result_1_100 = sum_to_n(100)
+print("1 到 100 的總和 =", result_1_100)
