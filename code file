@@ -1,0 +1,73 @@
+import random
+import re
+
+INITIALS = [
+    "b","p","m","f","d","t","n","l","g","k","h",
+    "j","q","x","zh","ch","sh","r","z","c","s",
+    "y","w"
+]
+
+FINALS = [
+    "a","o","e","i","u","ü",
+    "ai","ei","ao","ou","ie","üe","er",
+    "an","en","in","un","ün",
+    "ang","eng","ing","ong"
+]
+
+TONE_MARKS = {
+    "a": ["ā","á","ǎ","à"],
+    "o": ["ō","ó","ǒ","ò"],
+    "e": ["ē","é","ě","è"],
+    "i": ["ī","í","ǐ","ì"],
+    "u": ["ū","ú","ǔ","ù"],
+    "ü": ["ǖ","ǘ","ǚ","ǜ"],
+}
+
+VOWELS = "aoeiuü"
+
+def add_tone(base, tone):
+    if tone == 0:
+        return base
+
+    for v in "aoe":
+        if v in base:
+            idx = base.index(v)
+            return base[:idx] + TONE_MARKS[v][tone-1] + base[idx+1:]
+
+    for i in range(len(base)-1, -1, -1):
+        if base[i] in VOWELS:
+            v = base[i]
+            return base[:i] + TONE_MARKS[v][tone-1] + base[i+1:]
+
+    return base
+
+def normalize(s):
+    return s.strip().lower().replace("v", "ü")
+
+def generate_syllable():
+    initial = random.choice(INITIALS)
+    final = random.choice(FINALS)
+    tone = random.choice([1,2,3,4])
+    base = initial + final
+    return add_tone(base, tone), base
+
+def main():
+    print("=== 漢語拼音練習（無字號版）===")
+    total = int(input("題數："))
+    score = 0
+
+    for i in range(total):
+        correct, base = generate_syllable()
+        print(f"\n題目 {i+1}：{correct}")
+        user = normalize(input("請輸入拼音（可不帶聲調）："))
+
+        if user == base or user == correct:
+            print("✅ 正確")
+            score += 1
+        else:
+            print(f"❌ 錯誤，正確答案是：{correct}")
+
+    print(f"\n得分：{score}/{total}")
+
+if __name__ == "__main__":
+    main()
