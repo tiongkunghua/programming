@@ -1,0 +1,50 @@
+程式碼：
+聲韻大師初版- https://reurl.cc/qKokdn
+聲韻大師網頁- https://reurl.cc/5bVMln
+聲韻大師app畫面呈現(Figma)：https://www.figma.com/make/DOCbr3twGxPaYrSD6FPSmQ/Pinyin-Master-App-Design
+
+參考資料：
+•	語言科技 標音易2普通話發聲插件使用手冊 
+  https://www.langcomp.com.hk/products/pinyinizer_pra/pyzr2pramanual-tc.pdf
+•	Python如何使用pypinyin实现中文拼音转换？ 
+  https://www.51cto.com/article/781977.html
+•	轻松检测麦克风功能：使用Python的sounddevice和soundfile库 
+  https://blog.csdn.net/mdong9/article/details/143221097
+•	口播神器,基于Edge,微软TTS(text-to-speech)文字转语音免费开源库edge-tts语音合成实践(Python3.10) 
+  https://cloud.tencent.com/developer/article/2237181
+•	語言科技 《標音易》漢語拼音標注系統 使用手冊 
+  https://www.langcomp.com.hk/products/pinyinizer/Pinyinizer2Manual-TC.pdf
+•	解决报错：Invalid number of channels [PaErrorCode -9998]  
+  https://blog.csdn.net/hydekong/article/details/142883030
+•	Python中的中文拼音转换库：pypinyin与xpinyin 
+  https://blog.csdn.net/qq_64192931/article/details/139239535
+•	Get windows devices names with python and sounddevice 
+  https://pythonprogramming.altervista.org/get-windows-devices-names-with-python-and-sounddevice/
+•	全字庫 CNS11643 (2024)  
+  https://www.cns11643.gov.tw/
+•	[Sounddevice] Error opening InputStream: Invalid number of channels [PaErrorCode -9998] 
+  https://www.reddit.com/r/learnpython/comments/17pe2b0/sounddevice_error_opening_inputstream_invalid/
+•	Mic not working properly- Audio device number changing between sessions
+  https://discourse.psychopy.org/t/mic-not-working-properly-audio-device-number-changing-between-sessions/35857
+•	PsychPortAudio only lets me use sampling frequency 48000
+  https://psychtoolbox.discourse.group/t/psychportaudio-only-lets-me-use-sampling-frequency-48000/4464
+•	python-pinyin
+  https://github.com/mozillazg/python-pinyin
+•	pinyin-data
+  https://github.com/mozillazg/pinyin-data
+•	python-sounddevice
+  https://github.com/spatialaudio/python-sounddevice
+•	hanzipinyin
+  https://github.com/ervinzhao/hanzipinyin
+•	Google Gemini
+  https://gemini.google.com/app?hl=zh-TW
+•	Google NotebookLM 
+  https://notebooklm.google/
+•	Claude
+  https://claude.ai/new
+•	Lovable
+  https://lovable.dev/
+•	perplexity
+  https://www.perplexity.ai/
+•	Figma
+  https://www.figma.com/make/DOCbr3twGxPaYrSD6FPSmQ/Pinyin-Master-App-Design
